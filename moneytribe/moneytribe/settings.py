@@ -50,7 +50,8 @@ INSTALLED_APPS = [
     'allauth.socialaccount.providers.linkedin_oauth2',
     'userdata',
     'message',
-    
+    'newsletter'
+
 ]
 
 MIDDLEWARE_CLASSES = [
