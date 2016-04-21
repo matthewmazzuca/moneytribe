@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'message',
     'newsletter',
     'lender',
+    'loan'
 
 ]
 
