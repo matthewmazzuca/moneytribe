@@ -21,5 +21,5 @@ class File(models.Model):
 	is_pdf = models.BooleanField(default=False)
 	date = models.DateTimeField(auto_now=True, auto_now_add=False)
 
-	def __unicode__(self):
+	def __str__(self):
 		return self.title

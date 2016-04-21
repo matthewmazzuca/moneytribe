@@ -20,6 +20,9 @@ class Thread(models.Model):
 	group_ids = models.TextField(blank=True)
 	group_names = models.CharField(blank=True, max_length=100)
 
+	def __str__(self):
+		return self.start_user
+
 
 class Message(models.Model):
 
@@ -36,4 +39,7 @@ class Message(models.Model):
 
 	class Meta:
 		ordering = ["sent_at"]
-        # verbose_name_plural = "oxen"
+		# verbose_name_plural = "oxen"
+
+	def __str__(self):
+		return self.sender

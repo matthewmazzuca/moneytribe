@@ -22,7 +22,7 @@ class UserData(models.Model):
 	# image = models.ImageField(upload_to=image_upload_to, blank=True)
 	# company info
 
-	def __unicode__(self):
+	def __str__(self):
 		return self.first_name
 
 class UserAddress(models.Model):
@@ -46,5 +46,5 @@ class UserDataImage(models.Model):
 	selected = models.BooleanField(default=False)
 	extension = models.CharField(blank=True, max_length=10)
 
-	def __unicode__(self):
+	def __str__(self):
 		return self.title
