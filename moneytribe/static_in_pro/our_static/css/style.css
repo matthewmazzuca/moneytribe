@@ -208,7 +208,7 @@ section.quote-forms.section-top-space {
 
 .progress-bars .progress-bar .progress-bar-value {
     height: 4px;
-    background: #7DBA2F;
+    background: #3FD0FF;
     -webkit-border-top-left-radius: 2px;
     -moz-border-top-left-radius: 2px;
     border-top-left-radius: 2px;
@@ -228,7 +228,7 @@ section.quote-forms.section-top-space {
     position: absolute;
     content: ' ';
     background: #fff;
-    border: 3px solid #7DBA2F;
+    border: 3px solid #3FD0FF;
     left: -21px;
     top: 8px;
 }
@@ -310,7 +310,7 @@ section.quote-forms.section-top-space {
 }
 
 .insurance-params .important-number .notice-top {
-    color: #7DBA2F;
+    color: #3FD0FF;
     font-size: 16px;
     font-weight: 600;
     vertical-align: top;
@@ -319,7 +319,7 @@ section.quote-forms.section-top-space {
 }
 
 .insurance-params .important-number .number {
-    color: #7DBA2F;
+    color: #3FD0FF;
     font-weight: 300;
     font-size: 72px;
     display: inline-block;
@@ -465,7 +465,7 @@ section.quote-forms.section-top-space {
 }
 
 .documents .document.document-excel i {
-    color: #7DBA2F;
+    color: #3FD0FF;
 }
 
 .documents .document a {
@@ -657,7 +657,7 @@ section.quote-forms.section-top-space {
 }
 
 .checkbox .checkbox-status i.fa-check {
-    color: #7DBA2F;
+    color: #3FD0FF;
     margin-top: 13px;
 }
 
@@ -776,7 +776,7 @@ header {
 
 header .logo {
     float: left;
-    padding-top: 26px;
+    
 }
 
 header .menu {
@@ -1116,7 +1116,7 @@ header .menu-responsive {
 .heading .flying-1 {
     height: 70px;
     left: -50px;
-    background: rgba( 145, 218, 50, 0.85 );
+    background: #3FD0FF;
     position: absolute;
 }
 
@@ -1130,7 +1130,7 @@ header .menu-responsive {
 }
 
 .heading .flying-2 {
-    background: rgba( 145, 218, 50, 0.85 );
+    background: #3FD0FF;
     position: absolute;
     right: -50px;
     bottom: 0;
@@ -1321,7 +1321,7 @@ section.call-to-action {
 }
 
 section.call-to-action .left h2 {
-    color: #7DBA2F;
+    color: #3FD0FF;
     font-size: 32px;
     margin-bottom: 30px;
 }
@@ -1675,11 +1675,11 @@ section.insurances-slider .content .descriptions {
 }
 
 section.insurances-slider .content .descriptions h3 {
-    color: #7DBA2F;
+    color: #3FD0FF;
     font-weight: 800;
     font-size: 13px;
     margin-left: 2px;
-    border-bottom: 3px solid #7DBA2F;
+    border-bottom: 3px solid #3FD0FF;
     padding-bottom: 10px;
     display: inline-block;
     margin-bottom: 60px;
@@ -1760,7 +1760,7 @@ section.insurances-slider .content .tabs li.active {
 
 section.insurances-slider .content .tabs li:hover i,
 section.insurances-slider .content .tabs li.active i {
-    color: #7DBA2F;
+    color: #3FD0FF;
 }
 
 @media (min-width: 1350px) {
@@ -1885,11 +1885,11 @@ section.box-with-image-left .image .image-caption p {
 }
 
 section.box-with-image-left .content h3 {
-    color: #7DBA2F;
+    color: #3FD0FF;
     font-weight: 800;
     font-size: 13px;
     margin-left: 2px;
-    border-bottom: 3px solid #7DBA2F;
+    border-bottom: 3px solid #3FD0FF;
     padding-bottom: 10px;
     display: inline-block;
     margin-bottom: 60px;
@@ -2073,11 +2073,11 @@ section.box-with-image-right .image .image-caption p {
 }
 
 section.box-with-image-right .content h3 {
-    color: #7DBA2F;
+    color: #3FD0FF;
     font-weight: 800;
     font-size: 13px;
     margin-left: 2px;
-    border-bottom: 3px solid #7DBA2F;
+    border-bottom: 3px solid #3FD0FF;
     padding-bottom: 10px;
     display: inline-block;
     margin-bottom: 60px;
@@ -2247,7 +2247,7 @@ section.tabs .tabs-selector li.active {
 
 section.tabs .tabs-selector li:hover i,
 section.tabs .tabs-selector li.active i {
-    color: #7DBA2F;
+    color: #3FD0FF;
 }
 
 section.tabs .content {
@@ -2418,14 +2418,14 @@ section.blog .recent-news li .post-data {
     font-weight: 300;
     font-size: 13px;
     margin-bottom: 10px;
-    color: #7DBA2F;
+    color: #3FD0FF;
     font-weight: 700;
     text-transform: uppercase;
 }
 
 section.blog .recent-news li .post-data a {
     text-decoration: underline;
-    color: #7DBA2F;
+    color: #3FD0FF;
 }
 
 section.blog .recent-news li .post-data a:hover {
@@ -2602,7 +2602,7 @@ section.blog .recent-news .comments ol.comments-list .comment-author-avatar img 
 }
 
 section.blog .recent-news .comments ol.comments-list .bypostauthor .comment-author-avatar img {
-    border-left: 3px solid #7DBA2F;
+    border-left: 3px solid #3FD0FF;
 }
 
 section.blog .recent-news .comments ol.comments-list .comment-container {
@@ -2615,7 +2615,7 @@ section.blog .recent-news .comments ol.comments-list .comment-author-name {
 }
 
 section.blog .recent-news .comments ol.comments-list .comment-author-info time {
-    color: #7DBA2F;
+    color: #3FD0FF;
     margin-bottom: 15px;
     display: block;
 }
@@ -2679,11 +2679,11 @@ section.blog .sidebar .widget {
 }
 
 section.blog .sidebar .widget h3 {
-    color: #7DBA2F;
+    color: #3FD0FF;
     font-weight: 800;
     font-size: 13px;
     margin-left: 2px;
-    border-bottom: 3px solid #7DBA2F;
+    border-bottom: 3px solid #3FD0FF;
     padding-bottom: 10px;
     display: inline-block;
     margin-bottom: 30px;
@@ -2942,11 +2942,11 @@ section.slogan .center .background-icon {
 }
 
 section.slogan h3 {
-    color: #7DBA2F;
+    color: #3FD0FF;
     font-weight: 800;
     font-size: 13px;
     margin-left: 2px;
-    border-bottom: 3px solid #7DBA2F;
+    border-bottom: 3px solid #3FD0FF;
     padding-bottom: 10px;
     display: inline-block;
     margin-bottom: 60px;
@@ -3203,11 +3203,11 @@ section.references .center {
 }
 
 section.references h3 {
-    color: #7DBA2F;
+    color: #3FD0FF;
     font-weight: 800;
     font-size: 13px;
     margin-left: 2px;
-    border-bottom: 3px solid #7DBA2F;
+    border-bottom: 3px solid #3FD0FF;
     padding-bottom: 10px;
     display: inline-block;
     margin-bottom: 60px;
@@ -3300,7 +3300,7 @@ section.references .single-reference .single-reference-author:before {
 section.references .single-reference .single-reference-author strong {
     display: block;
     text-transform: uppercase;
-    color: #7DBA2F;
+    color: #3FD0FF;
     font-weight: 800;
 }
 
@@ -3391,11 +3391,11 @@ section.about-us .center {
 }
 
 section.about-us h3 {
-    color: #7DBA2F;
+    color: #3FD0FF;
     font-weight: 800;
     font-size: 13px;
     margin-left: 2px;
-    border-bottom: 3px solid #7DBA2F;
+    border-bottom: 3px solid #3FD0FF;
     padding-bottom: 10px;
     display: inline-block;
     margin-bottom: 60px;
@@ -3481,7 +3481,7 @@ section.about-us .left .timeline .timeline-element:before {
 }
 
 section.about-us .left .timeline .timeline-element .date {
-    color: #7DBA2F;
+    color: #3FD0FF;
     font-weight: 400;
     font-size: 16px;
     margin-top: -3px;
@@ -3652,11 +3652,11 @@ section.agents .center {
 }
 
 section.agents h3 {
-    color: #7DBA2F;
+    color: #3FD0FF;
     font-weight: 800;
     font-size: 13px;
     margin-left: 2px;
-    border-bottom: 3px solid #7DBA2F;
+    border-bottom: 3px solid #3FD0FF;
     padding-bottom: 10px;
     display: inline-block;
     margin-bottom: 60px;
@@ -3801,7 +3801,7 @@ section.image-slogan {
 
 section.image-slogan .flying-1 {
     height: 70px;
-    background: rgba( 145, 218, 50, 0.85 );
+    background: #3FD0FF;
     position: absolute;
     -webkit-border-bottom-right-radius: 2px;
     -moz-border-bottom-right-radius: 2px;
@@ -3817,7 +3817,7 @@ section.image-slogan .flying-1 span {
 }
 
 section.image-slogan .flying-2 {
-    background: rgba( 145, 218, 50, 0.85 );
+    background: #3FD0FF;
     position: absolute;
     right: 0;
     bottom: 0;
@@ -3967,7 +3967,7 @@ section.contact .contact-details .contact-detail-single.contact-detail-single-la
 }
 
 section.contact .contact-details h3 {
-    color: #7DBA2F;
+    color: #3FD0FF;
     font-weight: 400;
     font-size: 21px;
     margin-bottom: 30px;
@@ -4096,11 +4096,11 @@ section.contact-full .green-line {
 }
 
 section.contact-full h3 {
-    color: #7DBA2F;
+    color: #3FD0FF;
     font-weight: 800;
     font-size: 13px;
     margin-left: 2px;
-    border-bottom: 3px solid #7DBA2F;
+    border-bottom: 3px solid #3FD0FF;
     padding-bottom: 10px;
     display: inline-block;
     margin-bottom: 60px;
@@ -4308,11 +4308,11 @@ section.double-content .green-line {
 }
 
 section.double-content h3 {
-    color: #7DBA2F;
+    color: #3FD0FF;
     font-weight: 800;
     font-size: 13px;
     margin-left: 2px;
-    border-bottom: 3px solid #7DBA2F;
+    border-bottom: 3px solid #3FD0FF;
     padding-bottom: 10px;
     display: inline-block;
     margin-bottom: 60px;
@@ -4480,7 +4480,7 @@ section.quote-forms .quote-form-content h2 {
 }
 
 section.quote-forms .quote-form-content h2 span {
-    color: #7DBA2F;
+    color: #3FD0FF;
 }
 
 section.quote-forms .quote-form-content h4 {
@@ -4491,7 +4491,7 @@ section.quote-forms .quote-form-content h4 {
 
 section.quote-forms .quote-form-content h4 .slider-value {
     float: right;
-    color: #7DBA2F;
+    color: #3FD0FF;
 }
 
 section.quote-forms .quote-form-content .form {
@@ -4895,15 +4895,15 @@ footer p.important {
 }
 
 #contact-popup #contact-popup-content h2 span {
-    color: #7DBA2F;
+    color: #3FD0FF;
 }
 
 #contact-popup #contact-popup-content h3 {
-    color: #7DBA2F;
+    color: #3FD0FF;
     font-weight: 800;
     font-size: 13px;
     margin-left: 2px;
-    border-bottom: 3px solid #7DBA2F;
+    border-bottom: 3px solid #3FD0FF;
     padding-bottom: 10px;
     display: inline-block;
     margin-bottom: 41px;
@@ -4984,7 +4984,7 @@ footer p.important {
 }
 
 #contact-popup #contact-popup-content #contact-popup-close:hover {
-    background: #7DBA2F;
+    background: #3FD0FF;
 }
 
 #contact-popup #contact-popup-content .background-icon {
@@ -5232,7 +5232,7 @@ footer p.important {
 }
 
 #quote-popup #quote-popup-content #quote-popup-close:hover {
-    background: #7DBA2F;
+    background: #3FD0FF;
 }
 
 #quote-popup #quote-popup-content #quote-popup-tabs {
@@ -5244,7 +5244,7 @@ footer p.important {
 
 #quote-popup #quote-popup-content #quote-popup-tabs li {
     display: inline-block;
-    color: #7DBA2F;
+    color: #3FD0FF;
     font-size: 13px;
     font-weight: 800;
     text-transform: uppercase;
@@ -5275,7 +5275,7 @@ footer p.important {
 }
 
 #quote-popup #quote-popup-content #quote-popup-tabs li:not(.active):hover:after {
-    background: #7DBA2F;
+    background: #3FD0FF;
 }
 
 #quote-popup #quote-popup-content .quote-form {
@@ -5315,7 +5315,7 @@ footer p.important {
 }
 
 #quote-popup #quote-popup-content .quote-form .quote-form-content h2 span {
-    color: #7DBA2F;
+    color: #3FD0FF;
 }
 
 #quote-popup #quote-popup-content .quote-form .quote-form-content h4 {
@@ -5326,7 +5326,7 @@ footer p.important {
 
 #quote-popup #quote-popup-content .quote-form .quote-form-content h4 .slider-value {
     float: right;
-    color: #7DBA2F;
+    color: #3FD0FF;
 }
 
 #quote-popup #quote-popup-content .quote-form .quote-form-content .form {
