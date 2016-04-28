@@ -7,6 +7,20 @@ from django.contrib import admin
 urlpatterns = [
     # Examples:
     url(r'^$', 'moneytribe.views.home', name='home'),
+    url(r'^404/$', 'moneytribe.views._404', name='404'),
+    url(r'^agents/$', 'moneytribe.views.agents', name='agents'),
+    url(r'^blog-single/$', 'moneytribe.views.blog_single', name='blog-single'),
+    url(r'^blog/$', 'moneytribe.views.blog', name='blog'),
+    url(r'^car-insurance/$', 'moneytribe.views.car_insurance', name='car_insurance'),
+    url(r'^claims/$', 'moneytribe.views.claims', name='claims'),
+    url(r'^contact/$', 'moneytribe.views.contact', name='contact'),
+    url(r'^get-a-car-insurance-quote/$', 'moneytribe.views.get_a_car_insurance_quote', name='get-a-car-insurance-quote'),
+    url(r'^get-a-house-insurance-quote/$', 'moneytribe.views.get_a_house_insurance_quote', name='get-a-house-insurance-quote'),
+    url(r'^get-a-life-insurance-quote/$', 'moneytribe.views.get_a_life_insurance_quote', name='get-a-life-insurance-quote'),
+    url(r'^get-a-travel-insurance-quote/$', 'moneytribe.views.get_a_travel_insurance_quote', name='get-a-travel-insurance-quote'),
+    url(r'^house-insurance/$', 'moneytribe.views.house_insurance', name='house-insurance'),
+    url(r'^life-insurance/$', 'moneytribe.views.life_insurance', name='life-insurance'),
+    url(r'^travel-insurance/$', 'moneytribe.views.travel_insurance', name='travel-insurance'),
     # url(r'^dev/$', 'newsletter.views.dev', name='dev'),
 
     # # url(r'^contact/$', 'newsletter.views.contact', namespace='contact'),
