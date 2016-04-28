@@ -1,7 +1,9 @@
 from django.shortcuts import render, get_object_or_404
 
 def home(request):
-	return render(request, "account/signup.html", {})
+	return render(request, "base.html", {})
+
+
 
 # def features(request):
 
