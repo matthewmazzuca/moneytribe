@@ -66,6 +66,8 @@
 
     {% include 'header.html' %}
 
+    {% if not request.user.is_authenticated %}
+
     <div class="heading">
     
         <div >
@@ -640,6 +642,19 @@
         </div>
     
     </section>
+
+    {% endif %}
+
+    {% if request.user.is_authenticated %}
+
+    <script type="text/javascript">
+        
+        $(document).ready(function(){
+            window.location.replace("/profile");
+        })
+    </script>
+
+    {% endif %}
 
     {% include 'footer.html' %}
 

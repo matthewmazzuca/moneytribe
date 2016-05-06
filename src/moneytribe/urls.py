@@ -8,6 +8,7 @@ urlpatterns = [
     # Examples:
     url(r'^$', 'moneytribe.views.home', name='home'),
     url(r'^404/$', 'moneytribe.views._404', name='404'),
+    url(r'^profile/$', 'moneytribe.views.profile', name='profile'),
     url(r'^agents/$', 'moneytribe.views.agents', name='agents'),
     url(r'^blog-single/$', 'moneytribe.views.blog_single', name='blog-single'),
     url(r'^blog/$', 'moneytribe.views.blog', name='blog'),
