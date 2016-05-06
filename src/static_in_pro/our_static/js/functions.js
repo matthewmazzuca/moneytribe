@@ -638,31 +638,31 @@ $( document ).ready( function() {
     *
     */                
     
-    $.martanianHideSlide = function( slideID ) {
+    // $.martanianHideSlide = function( slideID ) {
 
-        var currentSlide = $( '.heading .heading-slide-single[data-slide-id="'+ slideID +'"]' );
+    //     var currentSlide = $( '.heading .heading-slide-single[data-slide-id="'+ slideID +'"]' );
         
-        currentSlide.children( '.flying-1' ).addClass( 'animated bounceOutLeft' );
-        currentSlide.children( '.flying-2' ).addClass( 'animated bounceOutRight' );
+    //     currentSlide.children( '.flying-1' ).addClass( 'animated bounceOutLeft' );
+    //     currentSlide.children( '.flying-2' ).addClass( 'animated bounceOutRight' );
         
-        setTimeout( function() {
+    //     setTimeout( function() {
         
-            currentSlide.children( '.flying-1' ).removeClass( 'animated bounceOutLeft' ).hide();
-            currentSlide.children( '.flying-2' ).removeClass( 'animated bounceOutRight' ).hide();
+    //         currentSlide.children( '.flying-1' ).removeClass( 'animated bounceOutLeft' ).hide();
+    //         currentSlide.children( '.flying-2' ).removeClass( 'animated bounceOutRight' ).hide();
         
-            currentSlide.children( '.heading-content' ).addClass( 'animated fadeOutUp' ); 
-            currentSlide.addClass( 'animated fadeOut' );
+    //         currentSlide.children( '.heading-content' ).addClass( 'animated fadeOutUp' ); 
+    //         currentSlide.addClass( 'animated fadeOut' );
             
-            setTimeout( function() {
+    //         setTimeout( function() {
 
-                currentSlide.children( '.heading-content' ).removeClass( 'animated fadeOutUp' ).hide(); 
-                currentSlide.removeClass( 'animated fadeOut' ).hide();
+    //             currentSlide.children( '.heading-content' ).removeClass( 'animated fadeOutUp' ).hide(); 
+    //             currentSlide.removeClass( 'animated fadeOut' ).hide();
             
-            }, 800 );
+    //         }, 800 );
         
-        }, 400 );
+    //     }, 400 );
 
-    };  
+    // };  
     
    /**
     *

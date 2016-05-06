@@ -1176,7 +1176,7 @@ header .menu-responsive {
     .heading .heading-content {
         width: 1100px;
         margin-left: -550px;
-        bottom: 100px;
+        top: 100px;
     }
     
     .heading .heading-content h2 {

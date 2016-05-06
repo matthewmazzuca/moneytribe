@@ -715,6 +715,12 @@
                     </li>
                     
                     <li><button class="menu-element" data-action="show-contact-popup">Contact</button></li>
+
+                    {% if not request.user.is_authenticated %}
+
+                    <li><a href="/accounts/signup">Signup/Login</a></li>
+
+                    {% endif %}
     
                 </ul>
                 
