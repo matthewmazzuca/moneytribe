@@ -1,0 +1,565 @@
+{% load staticfiles %}
+<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'font-awesome/css/font-awesome.css' %}" rel="stylesheet">
+    <link href="{% static 'css/plugins/iCheck/custom.css' %}" rel="stylesheet">
+    <link href="{% static 'css/plugins/steps/jquery.steps.css' %}" rel="stylesheet">
+    <link href="{% static 'css/animate.css' %}" rel="stylesheet">
+    <link href="{% static 'css/plugins/chosen/chosen.css' %}" rel="stylesheet">
+
+    <style type="text/css">
+        .visible {
+          visibility: visible;
+          opacity: 1;
+          transition: opacity 2s linear;
+        }
+        .hidden {
+          visibility: hidden;
+          opacity: 0;
+          transition: visibility 0s 2s, opacity 2s linear;
+        }
+    </style>
+    <style>
+
+        .wizard > .content > .body  position: relative; }
+
+    </style>
+    <div id="whiteout-home" class="col-xs-12" style="position: absolute; min-height: 650px; z-index: 10;">
+                <div class="ibox float-e-margins">
+                    
+                    <div class="ibox-content">
+                        
+                        <div id="wizard" style="padding-top: 30px;">
+                            <h1>Tell Us Your Postal Code</h1>
+                            <div class="heading-content" style="opacity: 1;">
+                    
+                                <!-- <div class="quote-form-content" style="text-align: center;"> -->
+                                <h2> We find and compare the best <br /> home insurance ratesfor you....It's easy </span></h2><br /><br /><br />
+                                <!-- </div> -->
+                                <div class="input-group" style="left: 25%">
+                                  <span class="input-group-addon" id="basic-addon1"><i class="fa fa-location-arrow"></i></span>
+                                  <input id="postal-home" type="text" class="form-control" placeholder="What's your postal code?" aria-describedby="basic-addon1" style="max-width: 400px;">
+                                </div>
+                                
+                            </div>
+
+
+                            <h1>Second Step</h1>
+                            <div class="step-content">
+                                <div class="text-center m-t-md">
+                                    <h2>This is step 2</h2>
+                                    <p>
+                                        This content is diferent than the first one.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <h1>Third Step</h1>
+                            <div class="step-content">
+                                <div class="text-center m-t-md">
+                                    <h2>This is step 3</h2>
+                                    <p>
+                                        This is last content.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+    <div id="whiteout-actual" class="col-xs-12" style="position: absolute; min-height: 650px; z-index: 10; background-color: #F0F1F0; display: none;">
+                <div class="ibox float-e-margins">
+                    
+                    <div class="ibox-content">
+                        
+                        <div id="wizard2" style="padding-top: 30px;">
+                            <h1>Tell Us Your Postal Code</h1>
+                            <div class="heading-content" style="opacity: 1;">
+                    
+                                <!-- <div class="quote-form-content" style="text-align: center;"> -->
+                                <h2> We find and compare the best <br /> home insurance ratesfor you....It's easy </span></h2><br /><br /><br />
+                                <!-- </div> -->
+                                <div class="input-group" style="left: 25%">
+                                  <span class="input-group-addon" id="basic-addon1"><i class="fa fa-location-arrow"></i></span>
+                                  <input id="postal-home" type="text" class="form-control" placeholder="What's your postal code?" aria-describedby="basic-addon1" style="max-width: 400px;">
+                                </div>
+                                
+                            </div>
+
+
+                            <h1>Objective</h1>
+                            <div class="step-content">
+                                <div class="text-center m-t-md heading-content">
+                                    <h2>I'm looking for a home loan to…</h2><br /><br /><br />
+                                <!-- </div> -->
+                                    <!-- Single button -->
+                                <div class="col-md-6" style="text-align: center;">
+                                    <div class="form-group">
+                                            <div class="input-group" style="display: block;">
+                                                <select data-placeholder="Objective..." class="chosen-select" style="width:350px;" tabindex="2">
+                                                    <option value="">What is your Objective</option>
+                                                    <option value="United States">Buy my first home</option>
+                                                    <option value="United States">Renovate my existing home</option>
+                                                    <option value="United States">Buy an Investment Property</option>
+                                                    <option value="United States">Buy my next home</option>
+                                                    <option value="United States">Consolidate my debt</option>
+                                                    <option value="United States">reduce my current home loan repayments</option>
+                                                
+                                                </select>
+                                                </div>
+                                            </div>
+                                </div>
+                                
+
+                                <div class="col-md-6" style="text-align: center;">
+                                    <div class="form-group">
+                                            <div class="input-group" style="display: block;">
+                                                <select data-placeholder="Consildation Options" class="chosen-select" style="width:350px;" tabindex="2">
+                                                    <option value="">Consildation Options</option>
+                                                    <option value="United States">Option 1</option>
+                                                    <option value="United States">Option 2</option>
+                                                
+                                                </select>
+                                                </div>
+                                            </div>
+                                </div>
+                               
+
+                                
+
+                                <div class="col-md-6" style="text-align: center;">
+                                    <div class="form-group"> 
+                                            <div class="input-group" style="display: block;">
+                                                <select data-placeholder="Have you found the property you want to purchase?" class="chosen-select" style="width:350px;" tabindex="2">
+                                                    <option value="">Have you found the property you want to purchase?</option>
+                                                    <option value="United States">Yes, I've signed a contract</option>
+                                                    <option value="United States">Yes, I want to make an offer</option>
+                                                    <option value="United States">No, I am still looking</option>
+                                                
+                                                </select>
+                                                </div>
+                                            </div>
+                                </div>
+                                
+
+                                <div class="col-md-6" style="text-align: center;">
+                                    <div class="form-group">
+                                            <div class="input-group" style="display: block;">
+                                                <select data-placeholder="When are you looking to buy?" class="chosen-select" style="width:350px;" tabindex="2">
+                                                    <option value="">When are you looking to buy?</option>
+                                                    <option value="United States">Now</option>
+                                                    <option value="United States">In the Next Month</option>
+                                                    <option value="United States">In the Next Year</option>
+                                                
+                                                </select>
+                                                </div>
+                                            </div>
+                                </div>
+                                </div>
+
+                                
+                            </div>
+
+                            <h1>Pricing Details</h1>
+                            <div class="step-content">
+                                <div class="text-center m-t-md heading-content">
+
+                                <h2> Tell us more about your pricing expectations </h2></br></br>
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <p class="font-bold">Property Price</p>
+                                            <div id="basic_slider"></div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <p class="font-bold">Loan Amount</p>
+                                            <div id="basic_slider2"></div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <p class="font-bold">Loan Term</p>
+                                            <div id="basic_slider3"></div>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <div class="row" style="padding-top: 30px;">
+                                        <div class="col-lg-4">
+                                            <div class="checkbox">
+                                            <input id="checkbox1" type="checkbox">
+                                            <label for="checkbox1">
+                                                Do you Currently Have a Home Loan?
+                                            </label>
+                                        </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">Currency</label>
+                                                
+                                                    <input type="text" class="form-control" data-mask="$ 999,999.99" placeholder="">
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="form-group">
+                                                <label class="col-sm-2 control-label">Rate</label>
+                                                
+                                                    <input id="postal-home" type="text" class="form-control" placeholder="Rate" aria-describedby="basic-addon1" >
+                                            </div>
+                                        </div>
+                                        
+                                    </div>  
+                                </div>
+                            </div>
+
+                            <h1>Other Details</h1>
+                            <div class="step-content">
+                                <div class="text-center m-t-md heading-content">
+                                <h2> We just need some final details </h2></br></br>
+                                    <div class="col-xs-4">
+                                        <div class="checkbox checkbox-primary">
+                                            <input id="checkbox2" type="checkbox" checked="">
+                                            <label for="checkbox2">
+                                                Redraw Facility
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-4">
+                                        <div class="checkbox checkbox-primary">
+                                            <input id="checkbox2" type="checkbox" checked="">
+                                            <label for="checkbox2">
+                                                Offset Account
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-4">
+                                        <div class="checkbox checkbox-primary">
+                                            <input id="checkbox2" type="checkbox" checked="">
+                                            <label for="checkbox2">
+                                                Make Extra Payments
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-4">
+                                        <div class="checkbox checkbox-primary">
+                                            <input id="checkbox2" type="checkbox" checked="">
+                                            <label for="checkbox2">
+                                                Split Load
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-4">
+                                        <div class="checkbox checkbox-primary">
+                                            <input id="checkbox2" type="checkbox" checked="">
+                                            <label for="checkbox2">
+                                                No Ongoing Fee
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-4">
+                                        <div class="checkbox checkbox-primary">
+                                            <input id="checkbox2" type="checkbox" checked="">
+                                            <label for="checkbox2">
+                                                No Application Fee
+                                            </label>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                            <h1>Sign Up</h1>
+                            <div class="step-content">
+                                <div class="text-center m-t-md heading-content">
+
+                                <h2> Sign up for full you're optimized rate suggestions</h2></br></br>
+                                    
+                                <a href="/accounts/signup"><button id="sign-up-form" type="button" class="btn btn-primary">Click Here to Sign Up!</button></a>
+                                      
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- <script src="js/jquery-2.1.1.js"></script> -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/plugins/metisMenu/jquery.metisMenu.js' %}"></script>
+    <script src="{% static 'js/plugins/slimscroll/jquery.slimscroll.min.js' %}"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="{% static 'js/inspinia.js' %}"></script>
+    <script src="{% static 'js/plugins/pace/pace.min.js' %}"></script>
+
+    <!-- Steps -->
+    <script src="{% static 'js/plugins/staps/jquery.steps.min.js' %}"></script>
+
+    <!-- Jquery Validate -->
+    <script src="{% static 'js/plugins/validate/jquery.validate.min.js' %}"></script>
+
+
+    <script>
+        $(document).ready(function(){
+            $('#sign-up-form').click(function(){
+                window.location.replace("/accounts/signup");
+            })
+
+            $("#wizard").steps();
+            $("#form").steps({
+                bodyTag: "fieldset",
+                onStepChanging: function (event, currentIndex, newIndex)
+                {
+                    // Always allow going backward even if the current step contains invalid fields!
+                    if (currentIndex > newIndex)
+                    {
+                        return true;
+                    }
+
+                    // Forbid suppressing "Warning" step if the user is to young
+                    if (newIndex === 3 && Number($("#age").val()) < 18)
+                    {
+                        return false;
+                    }
+
+                    var form = $(this);
+
+                    // Clean up if user went backward before
+                    if (currentIndex < newIndex)
+                    {
+                        // To remove error styles
+                        $(".body:eq(" + newIndex + ") label.error", form).remove();
+                        $(".body:eq(" + newIndex + ") .error", form).removeClass("error");
+                    }
+
+                    // Disable validation on fields that are disabled or hidden.
+                    form.validate().settings.ignore = ":disabled,:hidden";
+
+                    // Start validation; Prevent going forward if false
+                    return form.valid();
+                },
+                onStepChanged: function (event, currentIndex, priorIndex)
+                {
+                    // Suppress (skip) "Warning" step if the user is old enough.
+                    if (currentIndex === 2 && Number($("#age").val()) >= 18)
+                    {
+                        $(this).steps("next");
+                    }
+
+                    // Suppress (skip) "Warning" step if the user is old enough and wants to the previous step.
+                    if (currentIndex === 2 && priorIndex === 3)
+                    {
+                        $(this).steps("previous");
+                    }
+                },
+                onFinishing: function (event, currentIndex)
+                {
+                    var form = $(this);
+
+                    // Disable validation on fields that are disabled.
+                    // At this point it's recommended to do an overall check (mean ignoring only disabled fields)
+                    form.validate().settings.ignore = ":disabled";
+
+                    // Start validation; Prevent form submission if false
+                    return form.valid();
+                },
+                onFinished: function (event, currentIndex)
+                {
+                    var form = $(this);
+
+                    // Submit form input
+                    form.submit();
+
+                }
+            }).validate({
+                        errorPlacement: function (error, element)
+                        {
+                            element.before(error);
+                        },
+                        rules: {
+                            confirm: {
+                                equalTo: "#password"
+                            }
+                        }
+                    });
+
+             $("#wizard2").steps();
+            $("#form").steps({
+                bodyTag: "fieldset",
+                onStepChanging: function (event, currentIndex, newIndex)
+                {
+                    // Always allow going backward even if the current step contains invalid fields!
+                    if (currentIndex > newIndex)
+                    {
+                        return true;
+                    }
+
+                    // Forbid suppressing "Warning" step if the user is to young
+                    if (newIndex === 3 && Number($("#age").val()) < 18)
+                    {
+                        return false;
+                    }
+
+                    var form = $(this);
+
+                    // Clean up if user went backward before
+                    if (currentIndex < newIndex)
+                    {
+                        // To remove error styles
+                        $(".body:eq(" + newIndex + ") label.error", form).remove();
+                        $(".body:eq(" + newIndex + ") .error", form).removeClass("error");
+                    }
+
+                    // Disable validation on fields that are disabled or hidden.
+                    form.validate().settings.ignore = ":disabled,:hidden";
+
+                    // Start validation; Prevent going forward if false
+                    return form.valid();
+                },
+                onStepChanged: function (event, currentIndex, priorIndex)
+                {
+                    // Suppress (skip) "Warning" step if the user is old enough.
+                    if (currentIndex === 2 && Number($("#age").val()) >= 18)
+                    {
+                        $(this).steps("next");
+                    }
+
+                    // Suppress (skip) "Warning" step if the user is old enough and wants to the previous step.
+                    if (currentIndex === 2 && priorIndex === 3)
+                    {
+                        $(this).steps("previous");
+                    }
+                },
+                onFinishing: function (event, currentIndex)
+                {
+                    var form = $(this);
+
+                    // Disable validation on fields that are disabled.
+                    // At this point it's recommended to do an overall check (mean ignoring only disabled fields)
+                    form.validate().settings.ignore = ":disabled";
+                    window.location.replace("/accounts/signup");
+
+                    // Start validation; Prevent form submission if false
+                    // return form.valid();
+
+                },
+                onFinished: function (event, currentIndex)
+                {
+                    var form = $(this);
+
+                    // Submit form input
+                    window.location.replace("/accounts/signup");
+                }
+            }).validate({
+                        errorPlacement: function (error, element)
+                        {
+                            element.before(error);
+                        },
+                        rules: {
+                            confirm: {
+                                equalTo: "#password"
+                            }
+                        }
+                    });
+
+            
+       });
+
+        $('li').click(function(){
+            console.log($(this).attr('href'))
+            if($('a').attr('href') == '#finish') { 
+                console.log('clicked')
+            }
+        })
+        
+    </script>
+
+    <script src="{% static 'js/plugins/ionRangeSlider/ion.rangeSlider.min.js' %}"></script>
+
+<!--  -->
+
+    <script>
+        $(document).ready(function(){
+
+
+
+        $("#ionrange_1").ionRangeSlider({
+            min: 0,
+            max: 5000,
+            type: 'double',
+            prefix: "$",
+            maxPostfix: "+",
+            prettify: false,
+            hasGrid: true
+        });
+
+        $("#ionrange_2").ionRangeSlider({
+            min: 0,
+            max: 10,
+            type: 'single',
+            step: 0.1,
+            postfix: " carats",
+            prettify: false,
+            hasGrid: true
+        });
+
+           
+
+        $("#basic_slider").noUiSlider({
+            start: 40,
+            behaviour: 'tap',
+            connect: 'upper',
+            range: {
+                'min':  20,
+                'max':  80
+            }
+        });
+
+        $("#basic_slider3").noUiSlider({
+            start: 40,
+            behaviour: 'tap',
+            connect: 'upper',
+            range: {
+                'min':  20,
+                'max':  80
+            }
+        });
+        $("#basic_slider2").noUiSlider({
+            start: 40,
+            behaviour: 'tap',
+            connect: 'upper',
+            range: {
+                'min':  20,
+                'max':  80
+            }
+        });
+
+        $("#range_slider").noUiSlider({
+            start: [ 40, 60 ],
+            behaviour: 'drag',
+            connect: true,
+            range: {
+                'min':  20,
+                'max':  80
+            }
+        });
+
+        $("#drag-fixed").noUiSlider({
+            start: [ 40, 60 ],
+            behaviour: 'drag-fixed',
+            connect: true,
+            range: {
+                'min':  20,
+                'max':  80
+            }
+        })
+    })
+
+
+    </script>
+
+    <script src="{% static 'js/plugins/chosen/chosen.jquery.js' %}"></script>

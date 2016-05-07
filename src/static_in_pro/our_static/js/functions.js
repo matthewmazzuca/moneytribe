@@ -87,7 +87,7 @@ $( document ).ready( function() {
         *               
         */              
         
-        $.martanianHeadingSlider();  
+        // $.martanianHeadingSlider();  
         
        /**
         *
@@ -615,22 +615,22 @@ $( document ).ready( function() {
     *
     */                          
     
-    $.martanianHeadingSlider = function() {
+    // $.martanianHeadingSlider = function() {
                   
-        var currentHeadingSlideID = 1;
-        setInterval( function() {
+    //     var currentHeadingSlideID = 1;
+    //     setInterval( function() {
         
-            $.martanianHideSlide( currentHeadingSlideID );
-            setTimeout( function() {
+    //         $.martanianHideSlide( currentHeadingSlideID );
+    //         setTimeout( function() {
             
-                currentHeadingSlideID = currentHeadingSlideID == 1 ? 2 : 1;
-                $.martanianShowSlide( currentHeadingSlideID );
+    //             currentHeadingSlideID = currentHeadingSlideID == 1 ? 2 : 1;
+    //             $.martanianShowSlide( currentHeadingSlideID );
             
-            }, 400 );
+    //         }, 400 );
 
-        }, 10000 );
+    //     }, 10000 );
 
-    };
+    // };
     
    /**
     *
