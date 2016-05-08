@@ -56,6 +56,18 @@ def profile(request):
 
 	}
 	return render(request, "profile.html", context	)
+
+def usersettings(request):
+
+	try:
+		profile_img = UserDataImage.objects.get(user=request.user, selected=True)
+	except:
+		profile_img = False
+
+	context = { "profile_img": profile_img,
+
+	}
+	return render(request, "profile_settings.html", context	)
 # def features(request):
 
 # 	return render(request, "features.html", {})
