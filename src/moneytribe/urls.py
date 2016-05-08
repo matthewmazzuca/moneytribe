@@ -22,6 +22,8 @@ urlpatterns = [
     url(r'^house-insurance/$', 'moneytribe.views.house_insurance', name='house-insurance'),
     url(r'^life-insurance/$', 'moneytribe.views.life_insurance', name='life-insurance'),
     url(r'^travel-insurance/$', 'moneytribe.views.travel_insurance', name='travel-insurance'),
+    url(r'^logout/$', 'django.contrib.auth.views.logout',
+                          {'next_page': '/'}),
     # url(r'^dev/$', 'newsletter.views.dev', name='dev'),
 
     # # url(r'^contact/$', 'newsletter.views.contact', namespace='contact'),
