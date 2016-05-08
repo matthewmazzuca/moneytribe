@@ -111,73 +111,416 @@
                     line-height: 1.428571429;
                     border-radius: 15px;
                 }
+                .blocks .btn-primary 
+                {
+                    height:200px;
+                    width: 200px;
+                    margin: 0 5px;  
+                    border-radius: 0;
+                }
+                .price-box {
+    margin: 0 auto;
+    background: #E9E9E9;
+    border-radius: 10px;
+    padding: 40px 15px;
+    width: 500px;
+}
+
+.ui-widget-content {
+    border: 1px solid #bdc3c7;
+    background: #e1e1e1;
+    color: #222222;
+    margin-top: 4px;
+}
+
+.ui-slider .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    width: 5.2em;
+    height: 2.2em;
+    cursor: default;
+    margin: 0 -40px auto !important;
+    text-align: center; 
+    line-height: 30px;
+    color: #FFFFFF;
+    font-size: 15px;
+}
+
+.ui-slider .ui-slider-handle .glyphicon {
+    color: #FFFFFF;
+    margin: 0 3px; 
+    font-size: 11px;
+    opacity: 0.5;
+}
+
+.ui-corner-all {
+    border-radius: 20px;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+    top: -.9em;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default {
+    border: 1px solid #f9f9f9;
+    background: #3498db;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+    margin-left: -0.5em;
+}
+
+.ui-slider .ui-slider-handle {
+    cursor: pointer;
+}
+
+.ui-slider a,
+.ui-slider a:focus {
+    cursor: pointer;
+    outline: none;
+}
+
+.price, .lead p {
+    font-weight: 600;
+    font-size: 32px;
+    display: inline-block;
+    line-height: 60px;
+}
+
+h4.great {
+    background: #00ac98;
+    margin: 0 0 25px -60px;
+    padding: 7px 15px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    display: inline-block;
+    -moz-box-shadow:    2px 4px 5px 0 #ccc;
+    -webkit-box-shadow: 2px 4px 5px 0 #ccc;
+    box-shadow:         2px 4px 5px 0 #ccc;
+}
+
+.total {
+    border-bottom: 1px solid #7f8c8d;
+    /*display: inline;
+    padding: 10px 5px;*/
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.total:before {
+    content: "";
+    display: inline;
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width: 100%;
+    height: 3px;
+    background: #7f8c8d;
+    opacity: 0.5;
+}
+
+.price-slider {
+    margin-bottom: 70px;
+}
+
+.price-slider span {
+    font-weight: 200;
+    display: inline-block;
+    color: #7f8c8d;
+    font-size: 13px;
+}
+
+.form-pricing {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.price-form {
+    background: #ffffff;
+    margin-bottom: 10px;
+    padding: 20px;
+    border: 1px solid #eeeeee;
+    border-radius: 4px;
+    /*-moz-box-shadow:    0 5px 5px 0 #ccc;
+    -webkit-box-shadow: 0 5px 5px 0 #ccc;
+    box-shadow:         0 5px 5px 0 #ccc;*/
+}
+
+.form-group span.price {
+    font-weight: 200;
+    display: inline-block;
+    color: #7f8c8d;
+    font-size: 14px;
+}
+
+.help-text {
+    display: block;
+    margin-top: 32px;
+    margin-bottom: 10px;
+    color: #737373;
+    position: absolute;
+    /*margin-left: 20px;*/
+    font-weight: 200;
+    text-align: right;
+    width: 188px;
+}
+
+.price-form label {
+    font-weight: 200;
+    font-size: 21px;
+}
+
+img.payment {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.ui-slider-range-min {
+    background: #2980b9;
+}
+
+/* HR */
+
+hr.style {
+    margin-top: 0;
+    border: 0;
+    border-bottom: 1px dashed #ccc;
+    background: #999;
+}
             </style>
 
-    <div id="whiteout-actual" class="col-xs-12 animated fadeIn" style="position: absolute; min-height: 650px; z-index: 10; background-color: #F0F1F0; display: none;">
-        <div class="stepwizard col-md-offset-3">
-            <div class="stepwizard-row setup-panel">
-              <div class="stepwizard-step">
-                <a href="#step-1" type="button" class="btn btn-primary btn-circle">1</a>
-                <p>Step 1</p>
-              </div>
-              <div class="stepwizard-step">
-                <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
-                <p>Step 2</p>
-              </div>
-              <div class="stepwizard-step">
-                <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
-                <p>Step 3</p>
-              </div>
-            </div>
-          </div>
-          
-          <form role="form" action="" method="post">
-            <div class="row setup-content" id="step-1">
-              <div class="col-xs-6 col-md-offset-3">
-                <div class="col-md-12">
-                  <h3> Step 1</h3>
-                  <div class="form-group">
-                    <label class="control-label">First Name</label>
-                    <input  maxlength="100" type="text" required="required" class="form-control" placeholder="Enter First Name"  />
-                  </div>
-                  <div class="form-group">
-                    <label class="control-label">Last Name</label>
-                    <input maxlength="100" type="text" required="required" class="form-control" placeholder="Enter Last Name" />
-                  </div>
-                  <div class="form-group">
-                    <label class="control-label">Address</label>
-                    <textarea required="required" class="form-control" placeholder="Enter your address" ></textarea>
-                  </div>
-                  <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Next</button>
-                </div>
-              </div>
-            </div>
-            <div class="row setup-content" id="step-2">
-              <div class="col-xs-6 col-md-offset-3">
-                <div class="col-md-12">
-                  <h3> Step 2</h3>
-                  <div class="form-group">
-                    <label class="control-label">Company Name</label>
-                    <input maxlength="200" type="text" required="required" class="form-control" placeholder="Enter Company Name" />
-                  </div>
-                  <div class="form-group">
-                    <label class="control-label">Company Address</label>
-                    <input maxlength="200" type="text" required="required" class="form-control" placeholder="Enter Company Address"  />
-                  </div>
-                  <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Next</button>
-                </div>
-              </div>
-            </div>
-            <div class="row setup-content" id="step-3">
-              <div class="col-xs-6 col-md-offset-3">
-                <div class="col-md-12">
-                  <h3> Step 3</h3>
-                  <button class="btn btn-success btn-lg pull-right" type="submit">Submit</button>
-                </div>
-              </div>
-            </div>
-          </form>
+        <div id="whiteout-actual" class="col-xs-12 animated fadeIn" style="padding-top: 100px;position: absolute; min-height: 650px; z-index: 10; background-color: #F0F1F0; display: none;">
+                <div class="stepwizard col-md-offset-3">
+    <div class="stepwizard-row setup-panel">
+      <div class="stepwizard-step">
+        <a href="#step-1" type="button" class="btn btn-primary btn-circle">1</a>
+      </div>
+      <div class="stepwizard-step">
+        <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
+      </div>
+      <div class="stepwizard-step">
+        <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
+      </div>
+      <div class="stepwizard-step">
+        <a href="#step-4" type="button" class="btn btn-default btn-circle" disabled="disabled">4</a>
+
+      </div>
+      <div class="stepwizard-step">
+        <a href="#step-5" type="button" class="btn btn-default btn-circle" disabled="disabled">5</a>
+      </div>
+      <div class="stepwizard-step">
+        <a href="#step-6" type="button" class="btn btn-default btn-circle" disabled="disabled">6</a>
+      </div>
+      <div class="stepwizard-step">
+        <a href="#step-7" type="button" class="btn btn-default btn-circle" disabled="disabled">7</a>
+      </div>
+      <div class="stepwizard-step">
+        <a href="#step-8" type="button" class="btn btn-default btn-circle" disabled="disabled">8</a>
+      </div>
+      <div class="stepwizard-step">
+        <a href="#step-9" type="button" class="btn btn-default btn-circle" disabled="disabled">9</a>
+      </div>
     </div>
+  </div>
+  
+  <form role="form" action="" method="post">
+    <div class="row setup-content" id="step-1">
+      <div class="col-xs-6 col-md-offset-3">
+        <div class="col-md-12">
+
+          <div class="input-group" style="left: 25%">
+            <div class="row">
+                <h3> Please Enter Your Postal Code</h3>
+            </div>
+              <div class="row" style="padding-top: 20px; padding-bottom: 20px;">
+                  <!-- <span class="input-group-addon" id="basic-addon1"><i class="fa fa-location-arrow"></i></span> -->
+                  <input id="postal-home-2" type="text" class="form-control" placeholder="What's your postal code?" aria-describedby="basic-addon1" style="max-width: 400px;">
+              </div>
+        </div>
+          <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Next</button>
+        </div>
+      </div>
+    </div>
+    <div class="row setup-content" id="step-2">
+      <div class="col-xs-6 col-md-offset-3">
+        <div class="col-md-12">
+            <div class="row" style="text-align:  center;">
+                <h3> I'm looking for a home loan too...</h3>
+            </div>
+              <div class="row" style="padding-top: 20px; padding-bottom: 20px; text-align: center;">
+                  <div class="btn-group blocks" data-toggle="buttons">
+                      <label class="btn btn-primary nextBtn">
+                        <input type="radio" name="options" id="option1"> Buy my first home
+                      </label>
+                      <label class="btn btn-primary nextBtn">
+                        <input type="radio" name="options" id="option2"> Renovate my existing home
+                      </label>
+                      <label class="btn btn-primary nextBtn">
+                        <input type="radio" name="options" id="option3"> Buy and Investment Property
+                      </label>
+                    </div>
+              </div>
+              <div class="row" style="padding-top: 20px; padding-bottom: 20px; text-align: center;">
+                  <div class="btn-group blocks" data-toggle="buttons">
+                      <label class="btn btn-primary nextBtn">
+                        <input type="radio" name="options" id="option1"> Buy my next home
+                      </label>
+                      <label class="btn btn-primary nextBtn">
+                        <input type="radio" name="options" id="option2"> Consolidate my debt
+                      </label>
+                      <label class="btn btn-primary nextBtn">
+                        <input type="radio" name="options" id="option3"> Reduce my current home loan repayments
+                      </label>
+                    </div>
+              </div>
+        </div>
+      </div>
+    </div>
+    <div class="row setup-content" id="step-3">
+      <div class="col-xs-6 col-md-offset-3">
+        <div class="col-md-12">
+          <div class="row">
+                <h3> Consolidation Options...</h3>
+            </div>
+              <div class="row" style="padding-top: 20px; padding-bottom: 20px; text-align: center;">
+                  <div class="btn-group blocks" data-toggle="buttons">
+                      <label class="btn btn-primary nextBtn">
+                        <input type="radio" name="options" id="option1"> Option 1
+                      </label>
+                      <label class="btn btn-primary nextBtn">
+                        <input type="radio" name="options" id="option2"> Option 2
+                      </label>
+                      <label class="btn btn-primary nextBtn">
+                        <input type="radio" name="options" id="option3"> Option 3
+                      </label>
+                    </div>
+              </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row setup-content" id="step-4">
+      <div class="col-xs-6 col-md-offset-3">
+        <div class="col-md-12">
+
+          <div class="row">
+                <h3> Have you found the property you'd like to purchase?</h3>
+            </div>
+              <div class="row" style="padding-top: 20px; padding-bottom: 20px; text-align: center;">
+                  <div class="btn-group blocks" data-toggle="buttons">
+                      <label class="btn btn-primary nextBtn">
+                        <input type="radio" name="options" id="option1"> Yes, I've signed a contract
+                      </label>
+                      <label class="btn btn-primary nextBtn">
+                        <input type="radio" name="options" id="option2"> Yes, I want to make an offer
+                      </label>
+                      <label class="btn btn-primary nextBtn">
+                        <input type="radio" name="options" id="option3"> No, I am still looking
+                      </label>
+                    </div>
+              </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row setup-content" id="step-5">
+      <div class="col-xs-6 col-md-offset-3">
+        <div class="col-md-12">
+
+          <div class="row">
+                <h3> When are you looking to buy?</h3>
+            </div>
+              <div class="row" style="padding-top: 20px; padding-bottom: 20px; text-align: center;">
+                  <div class="btn-group blocks" data-toggle="buttons">
+                      <label class="btn btn-primary nextBtn">
+                        <input type="radio" name="options" id="option1"> Now
+                      </label>
+                      <label class="btn btn-primary nextBtn">
+                        <input type="radio" name="options" id="option2"> In the Next Month
+                      </label>
+                      <label class="btn btn-primary nextBtn">
+                        <input type="radio" name="options" id="option3"> In the Next Year
+                      </label>
+                    </div>
+              </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="row setup-content" id="step-6">
+      <div class="col-xs-6 col-md-offset-3">
+        <div class="col-md-12">
+
+          <div class="row">
+                <h3> Tell us a few financial details below:</h3>
+            </div>
+              <div class="row" style="padding-top: 20px; padding-bottom: 20px;">
+                  <!-- <span class="input-group-addon" id="basic-addon1"><i class="fa fa-location-arrow"></i></span> -->
+                  <div class="price-slider">
+                    <h4 class="great">Amount</h4>
+                    <span></span>
+                    <div class="col-sm-12">
+                      <div id="slider"></div>
+                    </div>
+                  </div>
+              </div>
+              <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Next</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="row setup-content" id="step-7">
+      <div class="col-xs-6 col-md-offset-3">
+        <div class="col-md-12">
+
+          <div class="row">
+                <h3> Do you currently have a home loan?</h3>
+            </div>
+              <div class="row" style="padding-top: 20px; padding-bottom: 20px; text-align: center;">
+                  <div class="btn-group blocks" data-toggle="buttons">
+                      <label class="btn btn-primary nextBtn">
+                        <input type="radio" name="options" id="option1"> Yes
+                      </label>
+                      <label class="btn btn-primary nextBtn">
+                        <input type="radio" name="options" id="option2"> No
+                      </label>
+                      
+                    </div>
+              </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row setup-content" id="step-8">
+      <div class="col-xs-6 col-md-offset-3">
+        <div class="col-md-12">
+
+          <div class="row">
+                <h3> Tell us some final details:</h3>
+            </div>
+              <div class="row" style="padding-top: 20px; padding-bottom: 20px;">
+                  <!-- <span class="input-group-addon" id="basic-addon1"><i class="fa fa-location-arrow"></i></span> -->
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">Currency</label>
+                    
+                        <input type="text" class="form-control" data-mask="$ 999,999.99" placeholder="">
+                    
+                </div>
+</div>
+<a href="/accounts/signup"><button class="btn btn-primary btn-lg pull-right" type="button" >Next</button></a>
+        </div>
+      </div>
+    </div>
+
+    
+  </form>
+ </div>
 
 
 
@@ -648,8 +991,62 @@
             
         })
     </script>
-
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
     <script>
+        $(document).ready(function() {
+          $("#slider").slider({
+              animate: true,
+              value:1,
+              min: 0,
+              max: 1000,
+              step: 10,
+              slide: function(event, ui) {
+                  update(1,ui.value); //changed
+              }
+          });
+
+          $("#slider2").slider({
+              animate: true,
+              value:0,
+              min: 0,
+              max: 500,
+              step: 1,
+              slide: function(event, ui) {
+                  update(2,ui.value); //changed
+              }
+          });
+
+          //Added, set initial value.
+          $("#amount").val(0);
+          $("#duration").val(0);
+          $("#amount-label").text(0);
+          $("#duration-label").text(0);
+          
+          update();
+      });
+
+      //changed. now with parameter
+      function update(slider,val) {
+        //changed. Now, directly take value from ui.value. if not set (initial, will use current value.)
+        var $amount = slider == 1?val:$("#amount").val();
+        var $duration = slider == 2?val:$("#duration").val();
+
+        /* commented
+        $amount = $( "#slider" ).slider( "value" );
+        $duration = $( "#slider2" ).slider( "value" );
+         */
+
+         $total = "$" + ($amount * $duration);
+         $( "#amount" ).val($amount);
+         $( "#amount-label" ).text($amount);
+         $( "#duration" ).val($duration);
+         $( "#duration-label" ).text($duration);
+         $( "#total" ).val($total);
+         $( "#total-label" ).text($total);
+
+         $('#slider a').html('<label><span class="glyphicon glyphicon-chevron-left"></span> '+$amount+' <span class="glyphicon glyphicon-chevron-right"></span></label>');
+         $('#slider2 a').html('<label><span class="glyphicon glyphicon-chevron-left"></span> '+$duration+' <span class="glyphicon glyphicon-chevron-right"></span></label>');
+      }
         $(document).ready(function(){
             $('#sign-up-form').click(function(){
                 window.location.replace("/accounts/signup");
