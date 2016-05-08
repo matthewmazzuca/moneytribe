@@ -68,6 +68,9 @@ def usersettings(request):
 
 	}
 	return render(request, "profile_settings.html", context	)
+
+def messages(request):
+	return render(request, "messages.html", {})
 # def features(request):
 
 # 	return render(request, "features.html", {})
