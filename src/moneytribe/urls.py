@@ -30,6 +30,9 @@ urlpatterns = [
     url(r'^profile/$', 'moneytribe.views.profile', name='profile'),
     url(r'^usersettings/$', 'moneytribe.views.usersettings', name='usersettings'),
     url(r'^messages/$', 'moneytribe.views.messages', name='messages'),
+    url(r'^files/$', 'moneytribe.views.files', name='files'),
+    url(r'^rates/$', 'moneytribe.views.rates', name='rates'),
+    url(r'^search/$', 'moneytribe.views.search', name='search'),
     # url(r'^dev/$', 'newsletter.views.dev', name='dev'),
 
     # # url(r'^contact/$', 'newsletter.views.contact', namespace='contact'),

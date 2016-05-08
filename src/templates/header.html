@@ -31,11 +31,11 @@
                             <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">{{user.userdata.first_name}} {{user.userdata.last_name}}</strong>
                              </span></span> </a>
                             <ul class="dropdown-menu animated fadeInRight m-t-xs">
-                                <li><a href="profile.html">Profile</a></li>
-                                <li><a href="contacts.html">Contacts</a></li>
-                                <li><a href="mailbox.html">Mailbox</a></li>
+                                <li><a href="/profile">Profile</a></li>
+                                <li><a href="">Contacts</a></li>
+                                <li><a href="/messages">Mailbox</a></li>
                                 <li class="divider"></li>
-                                <li><a href="login.html">Logout</a></li>
+                                <li><a href="/logout">Logout</a></li>
                             </ul>
                         </div>
                         <div class="logo-element">
@@ -59,18 +59,11 @@
                         
                     </li>
 
-                    
-
-                    <li >
-                        <a id="project-trigger"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Projects</span>{% if projects%}<span class="fa arrow"></span>{%endif%}</a>
-                        <ul class="nav nav-second-level">
-                          {% if projects %}
-                          {% for proj in projects %}
-                              <li><a class="sidetile" id="project-side-{{proj.id}}">{{proj.title}}</a></li>               
-                          {% endfor %}
-                          {% endif %}
-                        </ul>
+                    <li>
+                        <a id="rates-trigger" href="/rates"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Rates</span></a>
+                        
                     </li>
+
                     <li >
                         <a id="mail-trigger" href="/messages"><i class="fa fa-envelope"></i> <span class="nav-label">Messages </span><span class="label label-warning pull-right">16/24</span></a>
                         <!-- <ul class="nav nav-second-level collapse">
@@ -82,12 +75,12 @@
                     </li>
 
                     <li>
-                        <a id="file-trigger"><i class="fa fa-folder"></i> <span class="nav-label">File Manager</span> </a>
+                        <a id="file-trigger" href="/files"><i class="fa fa-folder"></i> <span class="nav-label">File Manager</span> </a>
                         
                     </li>
 
                     <li>
-                        <a id="issue-trigger"><i class="fa fa-history"></i> <span class="nav-label">Issue Tracker</span> </a>
+                        <a id="issue-trigger" href="/search"><i class="fa fa-history"></i> <span class="nav-label">Search</span> </a>
                         
                     </li>
 
@@ -157,7 +150,7 @@
                         <li class="divider"></li>
                         <li>
                             <div class="text-center link-block">
-                                <a href="notifications.html">
+                                <a href="">
                                     <strong>See All Alerts</strong>
                                     <i class="fa fa-angle-right"></i>
                                 </a>
@@ -842,14 +835,14 @@
             <nav class="navbar navbar-static-top">
             <!-- <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a> -->
 
-            <div class="logo">
+            <div class="logo" style="margin-left: 50px;">
 
             
                 <a href="/"><img class="img img-responsive" src="{% static 'img/mt-logo.png' %}" alt="Insurance Agency" /></a>
             
             </div>
             
-                <ul class="menu">
+                <ul class="menu" style="margin-right: 50px;">
                 
                     <li class="active"><a href="/">Home</a></li>
                     <li><button class="menu-element" data-action="show-quote-popup" data-quote-key="life-insurance">Get a quote</button></li>

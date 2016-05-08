@@ -71,6 +71,15 @@ def usersettings(request):
 
 def messages(request):
 	return render(request, "messages.html", {})
+
+def files(request):
+	return render(request, "file_manager.html", {})
+
+def rates(request):
+	return render(request, "rates.html", {})
+
+def search(request):
+	return render(request, "search.html", {})
 # def features(request):
 
 # 	return render(request, "features.html", {})
