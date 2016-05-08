@@ -483,13 +483,61 @@ html, body{
               <div class="row" style="padding-top: 20px; padding-bottom: 20px;">
                   <!-- <span class="input-group-addon" id="basic-addon1"><i class="fa fa-location-arrow"></i></span> -->
                   <div class="price-slider">
-                    <h4 class="great">Amount</h4>
+                    <h4 class="great">Property Price</h4>
                     <span></span>
                     <div class="col-sm-12">
                       <div id="slider"></div>
                     </div>
                   </div>
-              </div>
+
+                  <div class="price-slider">
+                    <h4 class="great">Loan Amount</h4>
+                    <span></span>
+                    <div class="col-sm-12">
+                      <div id="slider2"></div>
+                    </div>
+                  </div>
+
+                  <div class="price-slider">
+                    <h4 class="great">Current Salary</h4>
+                    <span></span>
+                    <div class="col-sm-12">
+                      <div id="slider3"></div>
+                    </div>
+                  </div>
+                  <div class="price-form" style="display: none">
+
+                    <div class="form-group">
+                      <label for="amount" class="col-sm-6 control-label">Amount ($): </label>
+                      <span class="help-text">Please choose your amount</span>
+                      <div class="col-sm-6">
+                        <input type="hidden" id="amount" class="form-control">
+                        <p class="price lead" id="amount-label"></p>
+                        <span class="price">.00</span>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="amount2" class="col-sm-6 control-label">Amount ($): </label>
+                      <span class="help-text">Please choose your amount</span>
+                      <div class="col-sm-6">
+                        <input type="hidden" id="amount2" class="form-control">
+                        <p class="price lead" id="amount-label2"></p>
+                        <span class="price">.00</span>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="amount3" class="col-sm-6 control-label">Amount ($): </label>
+                      <span class="help-text">Please choose your amount</span>
+                      <div class="col-sm-6">
+                        <input type="hidden" id="amount3" class="form-control">
+                        <p class="price lead" id="amount-label3"></p>
+                        <span class="price">.00</span>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
               <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Next</button>
         </div>
       </div>
@@ -526,10 +574,30 @@ html, body{
           <div class="row">
                 <h3> Tell us some final details:</h3>
             </div>
+            <div class="row" style="padding-top: 20px; padding-bottom: 20px;">
+                  <!-- <span class="input-group-addon" id="basic-addon1"><i class="fa fa-location-arrow"></i></span> -->
+                  <div class="form-group" style="text-align: center;">
+                    
+                    
+                        <input id="checkbox1" type="checkbox"><label for="checkbox1" class="col-sm-2 control-label">Are you Married?</label>
+                    
+                </div>
+                </div>
+
               <div class="row" style="padding-top: 20px; padding-bottom: 20px;">
                   <!-- <span class="input-group-addon" id="basic-addon1"><i class="fa fa-location-arrow"></i></span> -->
                   <div class="form-group">
                     <label class="col-sm-2 control-label">Currency</label>
+                    
+                        <input type="text" class="form-control" data-mask="$ 999,999.99" placeholder="">
+                    
+                </div>
+                </div>
+
+            <div class="row" style="padding-top: 20px; padding-bottom: 20px;">
+                  <!-- <span class="input-group-addon" id="basic-addon1"><i class="fa fa-location-arrow"></i></span> -->
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">Rate</label>
                     
                         <input type="text" class="form-control" data-mask="$ 999,999.99" placeholder="">
                     
@@ -1062,6 +1130,7 @@ html, body{
                      
                 </div>
 
+
                 <div class="contact-detail-single">
                 
                     <h3><i class="fa fa-envelope-o"></i> Contact details</h3>
@@ -1125,8 +1194,8 @@ html, body{
               animate: true,
               value:1,
               min: 0,
-              max: 1000,
-              step: 10,
+              max: 10000000,
+              step: 1000,
               slide: function(event, ui) {
                   update(1,ui.value); //changed
               }
@@ -1136,18 +1205,31 @@ html, body{
               animate: true,
               value:0,
               min: 0,
-              max: 500,
-              step: 1,
+              max: 500000,
+              step: 1000,
               slide: function(event, ui) {
                   update(2,ui.value); //changed
+              }
+          });
+          $("#slider3").slider({
+              animate: true,
+              value:1,
+              min: 0,
+              max: 10000000,
+              step: 1000,
+              slide: function(event, ui) {
+                  update(3,ui.value); //changed
               }
           });
 
           //Added, set initial value.
           $("#amount").val(0);
-          $("#duration").val(0);
+          $("#amount2").val(0);
+          $("#amount3").val(0);
+
           $("#amount-label").text(0);
-          $("#duration-label").text(0);
+          $("#amount-label2").text(0);
+          $("#amount-label3").text(0);
           
           update();
       });
@@ -1156,23 +1238,27 @@ html, body{
       function update(slider,val) {
         //changed. Now, directly take value from ui.value. if not set (initial, will use current value.)
         var $amount = slider == 1?val:$("#amount").val();
-        var $duration = slider == 2?val:$("#duration").val();
+        var $amount2 = slider == 2?val:$("#amount2").val();
+        var $amount3 = slider == 3?val:$("#amount3").val();
 
-        /* commented
-        $amount = $( "#slider" ).slider( "value" );
-        $duration = $( "#slider2" ).slider( "value" );
-         */
+         // commented
+        // $amount = $( "#slider" ).slider( "value" );
+        // $duration = $( "#slider2" ).slider( "value" );
+         
 
-         $total = "$" + ($amount * $duration);
          $( "#amount" ).val($amount);
          $( "#amount-label" ).text($amount);
-         $( "#duration" ).val($duration);
-         $( "#duration-label" ).text($duration);
-         $( "#total" ).val($total);
-         $( "#total-label" ).text($total);
 
-         $('#slider a').html('<label><span class="glyphicon glyphicon-chevron-left"></span> '+$amount+' <span class="glyphicon glyphicon-chevron-right"></span></label>');
-         $('#slider2 a').html('<label><span class="glyphicon glyphicon-chevron-left"></span> '+$duration+' <span class="glyphicon glyphicon-chevron-right"></span></label>');
+         $( "#amount2" ).val($amount2);
+         $( "#amount-label2" ).text($amount2);
+
+         $( "#amount3" ).val($amount3);
+         $( "#amount-label3" ).text($amount3);
+
+        
+         $('#slider a').html('<label><span class="fa fa-chevron-left"></span> '+$amount+' <span class="fa fa-chevron-right"></span></label>');
+         $('#slider2 a').html('<label><span class="fa fa-chevron-left"></span> '+$amount2+' <span class="fa fa-chevron-right"></span></label>');
+         $('#slider3 a').html('<label><span class="fa fa-chevron-left"></span> '+$amount3+' <span class="fa fa-chevron-right"></span></label>');
       }
         $(document).ready(function(){
             $('#sign-up-form').click(function(){
